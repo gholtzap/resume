@@ -1,0 +1,242 @@
+%-------------------------
+% Author : Gavin Holtzapple
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{etoolbox}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Gavin Holtzapple} \\ \vspace{1pt}
+    \small 480-227-6930 $|$ \href{mailto:holtzapplegavin@gmail.com}{\underline{holtzapplegavin@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/gholtzap/}{\underline{linkedin.com/in/gholtzap}} $|$
+    \href{https://gholtzap.vercel.app/}{\underline{gholtzap.vercel.app}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Arizona State University}{Tempe, AZ}
+      {Bachelor of Science in Computer Science | GPA: 3.4}{Aug 2021 - Dec 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+{CX Apprentice}{Oct. 2024 - Present}
+{Coinbase}{Remote}
+\resumeItemListStart
+    \resumeItem{Analyzed customer feedback to identify  pain points, informing product enhancements and improving user satisfaction.}
+     \resumeItem{Collaborated with cross-functional teams to translate customer insights into actionable product features.}
+      \resumeItem{Developed comprehensive knowledge of Coinbase products, contributing to the optimization of the user experience.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Product Manager Intern}{Jun. 2024 - Aug. 2024}
+{Walmart}{New York City, NY}
+\resumeItemListStart
+    \resumeItem{\textbf{Reduced avg transaction time by 44\%} by introducing bluetooth hardware \& optimizing software.}
+    \resumeItem{Created a \textbf{Sentiment Analysis Library \& Scraper} in \textbf{Python} to track competitor's digital payment systems.}
+    \resumeItem{Created Mural flows, Confluence docs, White papers, Figma mockups, and Powerpoints for Walmart [NDA].}
+    \resumeItem{Invented an optimized QR code to \textbf{reduce Azure costs by 5\%} and minimize the API Payload.}
+\resumeItemListEnd
+
+\resumeSubheading
+      {Software Engineer Intern}{Oct. 2023 -- May 2024}
+      {Rockwell Automation }{Phoenix, AZ}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Full-Stack} solutions using \textbf{React}/ \textbf{Node.JS}, enabling efficient parsing of machine-generated data.}
+        \resumeItem{Integrated \textbf{AWS} services including \textbf{EC2}, \textbf{DynamoDB}, \textbf{Lambda}, and \textbf{S3}, enhancing system scalability.}
+        \resumeItem{Modernized test infrastructure by transitioning from \textbf{Protractor} to \textbf{Cypress} for improved test automation.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineer Intern}{May 2023 -- Aug. 2023}
+      {Cigna}{Philadelphia, PA}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{REST APIs} using \textbf{Java} and \textbf{Springboot} to retrieve prescription data from \textbf{MongoDB} databases.}
+        \resumeItem{Developed \textbf{Full-Stack CRUD} interfaces using \textbf{React, Java, \& Openshift} to interact with prescription data.}
+        \resumeItem{Created a \textbf{Full-Stack app} with \textbf{React} and \textbf{Node} to improve company data processes for non-technical users.}
+      \resumeItemListEnd
+      
+
+    \resumeSubheading
+      {Software Engineer Intern}{May 2022 -- Aug. 2022}
+      {Voice Media Group}{Phoenix, AZ}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Full-Stack Applications} using \textbf{React} and \textbf{Node} to automate company QA processes, saving an estimated \textbf{\$60,000 per year} in expenses.}
+        \resumeItem{Migrated \textbf{Full-Stack Javascript} \& \textbf{Node} applications to \textbf{Typescript}, modernizing company development tools.}
+        \resumeItem{Improved company website \textbf{SEO, UI, and UX} by modernizing user-facing web pages.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Teaching Assistant - Computer Science}{Jan. 2022 -- Present}
+      {Arizona State University}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Taught concepts of \textbf{Java}, \textbf{Object-Oriented Programming, Data Structures}, and \textbf{Algorithms}.}
+        \resumeItem{Directly lead over 2000 students to success by teaching computer science concepts and \textbf{Algorithm Design}.}
+        \resumeItem{Created educational resources for students regarding commonly misunderstood programming concepts.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+          {\textbf{Solisa AI} $|$ \emph Typescript, Next.JS}{}
+          \resumeItemListStart
+            \resumeItem{Valued at \$4.0 million, Solisa is a CRM platform for health insurance agents.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Echo Labs} $|$ \emph Typescript, Next.JS}{}
+          \resumeItemListStart
+            \resumeItem{Echo Labs is my student-run software consulting firm. We make software for SBA and mixed funds worth billions of dollars.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Scoop (Robinhood Hackathon Winner)} $|$ \emph Typescript, Javascript, React, Next, Git, Express, HTML, CSS}{}
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{Full-Stack Web App} using \textbf{React} and \textbf{Node} to detect and predict epidemics in the USA.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Kingston Investment Tools} $|$ \emph{Python, Flask, Javascript, Matplotlib, Pandas}}{}
+          \resumeItemListStart
+            \resumeItem{Automated \textbf{Python} investing strategies returning anywhere from \textbf{200\% - 442\%} over 5-year intervals.}
+          \resumeItemListEnd
+
+
+        
+    \resumeSubHeadingListEnd
+%-----------LEADERSHIP-----------
+\section{Leadership}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Volunteer Firefighter} $|$ \emph{Phoenix Fire Department}}{}
+          \resumeItemListStart
+            \resumeItem{Volunteer firefighter for the City of Phoenix under Search/Rescue and Medical divisions.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Community Assistant (Residential Assistant)} $|$ \emph{Arizona State University}}{}
+          \resumeItemListStart
+            \resumeItem{First line of contact for crisis alleviation and professional guidance for thousands of ASU students. }
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Vice President} $|$ \emph{ASU Esports Association}}{}
+          \resumeItemListStart
+            \resumeItem{Vice president of ASU's largest club. Led and managed sponsorships and finances for 3,000 club members.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
